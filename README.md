@@ -1,69 +1,53 @@
-# React + TypeScript + Vite
+# 🌐 Portafolio Web Profesional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido/a a mi portafolio web profesional, desarrollado con tecnologías modernas para presentar mis proyectos, habilidades técnicas y blandas, experiencia y medios de contacto. Este sitio fue diseñado para ser funcional, responsive y visualmente atractivo.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧑‍💻 Sobre mí
 
-## Expanding the ESLint configuration
+Soy estudiante de Ingeniería Informática, apasionado por el desarrollo de software, la resolución de problemas y el aprendizaje constante. En este portafolio muestro parte de mi trayectoria, habilidades y proyectos en los que he trabajado.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Tecnologías utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- ⚛️ **React** + **TypeScript**  
+- ⚡ **Vite** como bundler rápido y eficiente  
+- 💨 **Tailwind CSS** (con modo oscuro personalizado)  
+- 🎞️ **Framer Motion** para animaciones suaves  
+- 🎯 **Lucide React** para íconos modernos  
+- 📄 **Formspree** para gestión de formularios sin backend  
+- 🖼️ Íconos SVG personalizados para tecnologías
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+## 🚀 Deploy
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Este portafolio está desplegado en **[Vercel](https://vercel.com/)** y se actualiza automáticamente al hacer push en el repositorio de GitHub.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+> 🔗 **Demo online:** _[proximamente-link.vercel.app](https://proximamente-link.vercel.app)_
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📬 Contacto
+
+Si querés contactarme, podés hacerlo directamente desde el formulario del sitio. El mensaje será enviado por email a través de Formspree.
+
+---
+
+## 📸 Capturas
+
+> ¡Próximamente agregaré capturas del sitio en distintas resoluciones!
+
+---
+
+## 📝 Licencia
+
+Este proyecto es de uso personal. Sentite libre de inspirarte en el diseño o estructura para tus propios proyectos educativos.
+
+---
+
+## ⭐ Contribuciones
+
+Este es un portafolio personal, pero si querés dejar una estrella ⭐ en el repositorio, ¡será bienvenida!
+
