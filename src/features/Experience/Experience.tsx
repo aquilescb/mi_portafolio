@@ -30,15 +30,7 @@ const ExperienceSection = () => {
               <p className="text-sm text-textMuted italic mb-4">{exp.period}</p>
               <p className="text-textMuted mb-4 text-justify">{exp.description}</p>
               <div className="flex flex-wrap gap-2">
-                {exp.technologies.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="bg-backgroundAlt text-textMuted px-3 py-1 rounded-full text-sm border border-gray-600"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+            </div>
             </motion.div>
           ))}
         </div>

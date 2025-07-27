@@ -5,7 +5,7 @@ export function getSkillIcon(skillName: string): string | undefined {
     ...skills.frontend,
     ...skills.backend,
     ...skills.databases,
-    ...skills.soft,
+    ...skills.tools,
   ];
 
   const match = allSkills.find((s) => s.name.toLowerCase() === skillName.toLowerCase());

@@ -6,7 +6,7 @@ const skillGroups = [
   { title: "Frontend", items: skills.frontend },
   { title: "Backend", items: skills.backend },
   { title: "Databases", items: skills.databases },
-  { title: "Soft", items: skills.soft },
+  { title: "Tools", items: skills.tools },
 ];
 
 export default function SkillsSection() {

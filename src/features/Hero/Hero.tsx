@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin} from "lucide-react";
 import bg from "../../assets/hero-bg.jpg";
 import profile from "../../assets/profile.jpg";
-
 const Hero = () => {
   return (
     <section
@@ -27,7 +26,7 @@ const Hero = () => {
         className="relative z-10 max-w-2xl px-4"
       >
         {/* Foto de perfil */}
-        <div className="mx-auto w-32 h-32 rounded-full overflow-hidden border-4 border-primary mb-6 shadow-lg">
+        <div className="mx-auto w-32 h-32 rounded-full overflow-hidden border-2 border-primary mb-6 shadow-lg">
           <img src={profile} alt="Aquiles" className="w-full h-full object-cover" />
         </div>
 
@@ -37,19 +36,16 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center gap-5 mb-6 text-white">
-          <a href="https://github.com/" target="_blank" className="hover:text-primary transition">
+          <a href="https://github.com/aquilescb" target="_blank" className="hover:text-primary transition">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com/" target="_blank" className="hover:text-primary transition">
+          <a href="https://www.linkedin.com/in/aquilescb123/" target="_blank" className="hover:text-primary transition">
             <Linkedin size={24} />
-          </a>
-          <a href="mailto:tuemail@gmail.com" className="hover:text-primary transition">
-            <Mail size={24} />
           </a>
         </div>
 
         <a
-          href="/cv.pdf"
+          href="/docs/CVAquilesCancinos.pdf"
           download
           className="bg-primary hover:bg-primaryHover text-white font-semibold py-2 px-5 rounded-md transition"
         >

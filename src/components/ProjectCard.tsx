@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { Github, Youtube  } from "lucide-react";
 import { getSkillIcon } from "../utils/getSkillIcon";
 type Props = {
   title: string;
@@ -6,9 +6,10 @@ type Props = {
   tech: string[];
   image: string;
   repo: string;
+  video?: string; 
 };
 
-export default function ProjectCard({ title, description, tech, image, repo }: Props) {
+export default function ProjectCard({ title, description, tech, image, repo, video }: Props) {
 return (
     <div className="bg-card rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300">
         {/* Imagen de portada */}
@@ -18,12 +19,29 @@ return (
             {/* Título + Link */}
             <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold">{title}</h3>
-                <a href={repo} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primaryHover">
-                <ExternalLink size={18} />
-                </a>
+                 <div className="flex gap-2">
+                    {video && (
+                    <a
+                        href={video}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-red-500 hover:text-red-600"
+                    >
+                        <Youtube size={24} />
+                    </a>
+                    )}
+                    <a
+                    href={repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primaryHover"
+                    >
+                    <Github size={24} />
+                    </a>
+                </div>
             </div>
             {/* Descripción */}
-            <p className="text-textMuted text-sm">{description}</p>
+            <p className="text-textMuted text-sm text-justify">{description}</p>
             {/* Tecnologías */}
             <div className="flex flex-wrap gap-2 mt-auto">
             {tech.map((t) => {

@@ -20,7 +20,7 @@ const About = () => {
           <img
             src={perfil}
             alt="Aquiles Cancinos"
-            className="rounded-xl shadow-lg border-4 border-primary object-cover max-h-[400px] w-full"
+            className="rounded-xl shadow-lg border-2 border-primary object-cover max-h-[400px] w-full"
           />
         </motion.div>
         {/* Contenido */}
